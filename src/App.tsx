@@ -1,26 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes , Route } from 'react-router-dom';
+import Header from './components/Header';
+import Home from './pages/Home';
+import AboutUs from './pages/AboutUs';
+import RunsForSale from './pages/RunsForSale';
+import LinehaulBootcamp from './pages/LinehaulBootcamp';
+import SRSCalculator from './pages/SRSCalculator';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App: React.FC = () => {
+	return (
+		<Router>
+			<div>
+				<Header />
+				<Routes >
+					<Route path="/about-us" element={<AboutUs />} />
+					<Route path="/runs-for-sale" element={<RunsForSale />} />
+					<Route path="/linehaul-bootcamp" element={<LinehaulBootcamp />} />
+					<Route path="/srs-calculator" element={<SRSCalculator />} />
+					<Route path="/" element={<Home />} />
+				</Routes >
+			</div>
+		</Router>
+	);
+};
 
 export default App;
+
+
+
+					// <Route path="/about-us" Component={AboutUs} />
+					// <Route path="/runs-for-sale" Component={RunsForSale} />
+					// <Route path="/linehaul-bootcamp" Component={LinehaulBootcamp} />
+					// <Route path="/srs-calculator" Component={SRSCalculator} />
+					// <Route path="/" Component={Home} /> 
