@@ -14,19 +14,19 @@ const Header: React.FC = () => {
 
 				<div style={{ flexGrow: 1 }} />
 				{/* Use Link components for navigation */}
-				<Button color="inherit" component={Link} to="/">
+				<Button color="inherit" component={Link} to="/client">
 					HOME
 				</Button>
-				<Button color="inherit" component={Link} to="/about-us">
+				<Button color="inherit" component={Link} to="/client/about-us">
 					ABOUT US
 				</Button>
-				<Button color="inherit" component={Link} to="/runs-for-sale">
+				<Button color="inherit" component={Link} to="/client/runs-for-sale">
 					RUNS FOR SALE
 				</Button>
-				<Button color="inherit" component={Link} to="/linehaul-bootcamp">
+				<Button color="inherit" component={Link} to="/client/linehaul-bootcamp">
 					LINEHAUL BOOTCAMP
 				</Button>
-				<Button color="inherit" component={Link} to="/srs-calculator">
+				<Button color="inherit" component={Link} to="/client/srs-calculator">
 					SRS CALCULATOR
 				</Button>
                 <div style={{ flexGrow: 1 }} />

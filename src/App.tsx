@@ -13,11 +13,11 @@ const App: React.FC = () => {
 			<div>
 				<Header />
 				<Routes >
-					<Route path="/about-us" element={<AboutUs />} />
-					<Route path="/runs-for-sale" element={<RunsForSale />} />
-					<Route path="/linehaul-bootcamp" element={<LinehaulBootcamp />} />
-					<Route path="/srs-calculator" element={<SRSCalculator />} />
-					<Route path="/" element={<Home />} />
+					<Route path="/client/about-us" element={<AboutUs />} />
+					<Route path="/client/runs-for-sale" element={<RunsForSale />} />
+					<Route path="/client/linehaul-bootcamp" element={<LinehaulBootcamp />} />
+					<Route path="/client/srs-calculator" element={<SRSCalculator />} />
+					<Route path="/client" element={<Home />} />
 				</Routes >
 			</div>
 		</Router>
@@ -25,11 +25,3 @@ const App: React.FC = () => {
 };
 
 export default App;
-
-
-
-					// <Route path="/about-us" Component={AboutUs} />
-					// <Route path="/runs-for-sale" Component={RunsForSale} />
-					// <Route path="/linehaul-bootcamp" Component={LinehaulBootcamp} />
-					// <Route path="/srs-calculator" Component={SRSCalculator} />
-					// <Route path="/" Component={Home} /> 
